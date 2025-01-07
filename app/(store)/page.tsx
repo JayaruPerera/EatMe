@@ -43,7 +43,7 @@ const ImageSlider = () => {
               className="h-full w-full object-cover"
             />
             {/* White Overlay */}
-            <div className="absolute inset-0 bg-white/50"></div>
+            <div className="absolute inset-0 bg-black/50"></div>
           </div>
         ))}
       </div>
@@ -55,7 +55,7 @@ const ImageSlider = () => {
             key={index}
             onClick={() => goToSlide(index)}
             className={`h-3 w-3 rounded-full ${
-              index === currentIndex ? "bg-rose-600" : "bg-gray-400"
+              index === currentIndex ? "bg-orange-200" : "bg-gray-400"
             }`}
           ></button>
         ))}
@@ -66,7 +66,7 @@ const ImageSlider = () => {
         <div className="text-center">
           <h1 className="text-3xl font-extrabold sm:text-5xl">
             Let us find your
-            <strong className="block font-extrabold text-rose-700">
+            <strong className="block font-extrabold text-orange-400">
               Forever Home.
             </strong>
           </h1>
@@ -77,13 +77,13 @@ const ImageSlider = () => {
           <div className="mt-8 flex flex-wrap gap-4 text-center justify-center">
             <a
               href="#"
-              className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+              className="block w-full rounded bg-orange-400 px-12 py-3 text-sm font-medium text-white shadow hover:bg-orange-600 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
             >
               Get Started
             </a>
             <a
               href="#"
-              className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+              className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-orange-400 shadow hover:text-orange-600 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
             >
               Learn More
             </a>
